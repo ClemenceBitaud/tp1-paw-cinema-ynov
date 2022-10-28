@@ -7,7 +7,7 @@
 .input-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 2%;
+  margin: 1%;
 }
 
 .input-block {
