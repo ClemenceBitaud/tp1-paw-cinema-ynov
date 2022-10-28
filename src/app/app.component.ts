@@ -13,6 +13,8 @@ export class AppComponent implements OnInit{
   apiKey = '33a57ddf5cdd8f23f29b6949484a8188';
   filmList: any[] = [];
 
+  //https://api.themoviedb.org/3/movie/{movie_id}/images?api_key=33a57ddf5cdd8f23f29b6949484a8188&language=en-US
+
   constructor(private http: HttpClient) {
   }
 

@@ -1,11 +1,26 @@
-<div>
-  <input [(ngModel)]="filmName" type="text" placeholder="Enter film name">
-  <button (click)="searchFilm()">Search</button>
+<div class="input-container">
+  <div class="input-block">
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Enter film name</mat-label>
+      <input matInput  [(ngModel)]="filmName" placeholder="Enter film name">
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="searchFilm()">Search</button>
+  </div>
+
 </div>
 
 <div class="block-film">
-  <div  *ngFor="let film of filmList">
-    <span>{{film.title}}</span>
-  </div>
+  <mat-card *ngFor="let film of filmList" class="film-card">
+    <mat-card-title>{{film.title}}</mat-card-title>
+    <mat-card-content>
+      <div class="image-container">
+        <img src="https://image.tmdb.org/t/p/original{{film.poster_path}}" alt="film poster" style="width: 30%">
+      </div>
+      <div>
+        {{film.overview}}
+      </div>
+      <span><b>Fan vote : {{film.vote_average}}</b></span>
+    </mat-card-content>
+  </mat-card>
 </div>
 

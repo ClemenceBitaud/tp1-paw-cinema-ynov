@@ -1,4 +1,27 @@
 .block-film {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
+}
+
+.input-block {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.film-card {
+  width: 25%;
+  margin: 1%;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
 }
