@@ -1,0 +1,4 @@
+.block-film {
+  display: flex;
+  flex-wrap: wrap;
+}
